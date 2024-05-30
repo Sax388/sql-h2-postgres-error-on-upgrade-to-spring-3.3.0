@@ -1,0 +1,18 @@
+databaseChangeLog:
+  - changeSet:
+      id: "init report config table"
+      author: Me
+      changes:
+        - createTable:
+            tableName: report_config
+            columns:
+              - column:
+                  name: report_id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: period_type
+                  type: varchar(255)

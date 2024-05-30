@@ -1,0 +1,14 @@
+spring:
+  jpa:
+    database: postgresql
+  datasource:
+    driverClassName: org.h2.Driver
+    # According to the docs there should be ';DATABASE_TO_LOWER=TRUE' as well, but it leads to errors
+    url: jdbc:h2:mem:einnahmemeldungen-testdb;MODE=PostgreSQL;DEFAULT_NULL_ORDERING=HIGH;NON_KEYWORDS=VALUE
+    username: sa
+    password: password
+  h2:
+    console:
+      enabled: true
+  liquibase:
+    change-log: config/liquibase/master.yaml
