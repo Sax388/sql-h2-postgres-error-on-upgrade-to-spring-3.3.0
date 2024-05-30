@@ -28,6 +28,6 @@ public class ReportConfig {
   private Long id;
 
   @Enumerated(EnumType.STRING)
-  @Column(name = "period_type", columnDefinition = "varchar(255)")
+  @Column(name = "period_type")
   private PeriodType periodType;
 }

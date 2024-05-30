@@ -15,4 +15,4 @@ databaseChangeLog:
                     nullable: false
               - column:
                   name: period_type
-                  type: varchar(255)
+                  type: ENUM('DAILY', 'MONTHLY', 'QUARTERLY', 'ANNUALLY')
