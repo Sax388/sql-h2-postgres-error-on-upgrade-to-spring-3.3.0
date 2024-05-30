@@ -14,7 +14,6 @@ class ApplicationTests {
 
   @Test
   void saveToRepository() {
-    reportConfigRepository.save(new ReportConfig());
-    reportConfigRepository.findAll();
+    reportConfigRepository.save(ReportConfig.builder().periodType(PeriodType.MONTHLY).build());
   }
 }
