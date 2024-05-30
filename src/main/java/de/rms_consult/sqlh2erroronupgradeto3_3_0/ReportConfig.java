@@ -27,7 +27,6 @@ public class ReportConfig {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  @Enumerated(EnumType.STRING)
   @Column(name = "period_type")
-  private PeriodType periodType;
+  private String periodType;
 }
